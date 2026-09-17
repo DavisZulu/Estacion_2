@@ -1,0 +1,9 @@
+# Archivos generados por Python
+__pycache__/
+*.pyc
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Salidas que genera el programa al ejecutarse
+salidas/
