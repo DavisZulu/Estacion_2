@@ -63,6 +63,18 @@ def registrar_tipo(nombre, clase):
     _REGISTRO[nombre.upper()] = clase
 
 
+def eliminar_tipo(nombre):
+    """
+    Quita un tipo del registro.
+
+    Es la operacion simetrica de registrar_tipo(). Se usa sobre todo en las
+    pruebas automaticas: como el registro es estado compartido de todo el
+    paquete, una prueba que agrega un tipo debe dejarlo como estaba para no
+    alterar el resultado de las siguientes.
+    """
+    _REGISTRO.pop(nombre.upper(), None)
+
+
 def tipos_disponibles():
     """Devuelve la lista de tipos que el sistema sabe construir."""
     return sorted(_REGISTRO.keys())
