@@ -4,6 +4,7 @@
 **Núcleo:** Fundamentos de Software · CEIPA Business School
 **Autor:** Deibis Zuluaga Baena
 **Docente:** Simón Peláez Loaiza
+**Repositorio público:** https://github.com/DavisZulu/Estacion_2
 
 Esta entrega **no es lo de una sola semana**: consolida en un único sistema lo construido en las
 Semanas 3, 4 y 5. El objetivo no era juntar archivos, sino resolver lo que la acumulación dejó a la
@@ -37,9 +38,9 @@ Estacion_2/
 │   └── transacciones_corruptas.txt # 50 registros, 12 con fallos deliberados
 ├── pruebas/
 │   └── test_integracion.py        # 16 pruebas automáticas
-├── salidas/                       # La genera el programa (excluida del repositorio)
-│   ├── errores_carga.log
-│   └── transacciones.json
+├── salidas/                       # Las genera el programa; se versionan como evidencia
+│   ├── errores_carga.log          # Registro de auditoría de la carga
+│   └── transacciones.json         # Las 38 transacciones válidas serializadas
 └── docs/
     └── Informe técnico en PDF con normas APA
 ```
@@ -74,6 +75,11 @@ python3 -m unittest discover -s pruebas -t .      # pruebas automáticas
 
 El programa **crea la carpeta `salidas/` si no existe**, de modo que funciona en un clon recién
 descargado de GitHub.
+
+> **Nota:** los dos archivos de `salidas/` están versionados a propósito. Son la evidencia de que
+> la tolerancia a fallos y la serialización funcionan: `errores_carga.log` conserva los 12 descartes
+> con su línea y su motivo, y `transacciones.json` las 38 transacciones válidas. El programa los
+> regenera en cada ejecución, así que se pueden reproducir.
 
 ## Arquitectura: una sola jerarquía de clases
 
@@ -250,6 +256,40 @@ cosa, no solo qué archivo se tocó.
 |------|----------|
 | `main` | Versión estable del sistema |
 | `feature/pruebas-de-integracion` | Batería de pruebas, integrada a `main` mediante Pull Request |
+
+### Historial de commits
+
+| # | Commit | Qué incorpora |
+|---|--------|---------------|
+| 1 | Inicializa el repositorio de la Estación 2 con su `.gitignore` | Punto de partida |
+| 2 | Agrega el modelo de dominio con los tres pilares de la POO | `modelo.py` · Semana 3 |
+| 3 | Reemplaza la cadena `if/elif` de la fábrica por un registro de tipos | `fabrica.py` · OCP |
+| 4 | Incorpora los archivos de datos de prueba de la Semana 4 | `datos/` |
+| 5 | Agrega la carga tolerante a fallos con registro de auditoría | `cargador.py` · Semana 4 |
+| 6 | Agrega la serialización JSON de ida y vuelta | `serializador.py` · Semana 4 |
+| 7 | Separa la presentación de los resultados en el módulo de reportes | `reportes.py` · SRP |
+| 8 | Agrega el punto de entrada que integra las tres semanas | `main.py` |
+| 9 | Agrega `eliminar_tipo()` como operación simétrica del registro | *rama* |
+| 10 | Agrega la batería de pruebas automáticas del sistema | *rama* · `pruebas/` |
+| 11 | Agrega el README con la documentación completa del sistema | `README.md` |
+| 12 | Cierra los destinos del log antes de reemplazarlos | Corrección detectada por las pruebas |
+| 13 | Integra la corrección del cierre de handlers desde `main` | *rama* |
+| 14 | Agrega el informe técnico en PDF con normas APA | `docs/` |
+| 15 | Versiona las salidas que genera el programa como evidencia | `salidas/` |
+
+### Los repositorios del curso
+
+El proyecto se ha trabajado con un repositorio independiente por actividad, todos públicos en
+[github.com/DavisZulu](https://github.com/DavisZulu):
+
+| Entrega | Repositorio | Entrega | Repositorio |
+|---|---|---|---|
+| Semana 1 · Act. 1 | `Semana_1_Act_1` | Quiz Semana 3 | `QUIZ-SEMANA-3` |
+| Semana 1 · Act. 2 | `Semana_1_Act_2` | **Estación 1** | `Estacion_1` |
+| Semana 2 · Act. 1 | `Semana_2_Act_1` | Semana 4 · Act. 1 | `Semana_4_Act_1` |
+| Quiz Semana 2 | `QUIZ-SEMANA-2` | Semana 4 · Act. 2 | `Semana_4_Act_2` |
+| Semana 3 · Act. 1 | `Semana_3_Act_1` | Semana 5 · Act. 1 | `Semana_5_Act_1` |
+| Semana 3 · Act. 2 | `Semana_3_Act_2` | **Estación 2** | `Estacion_2` |
 
 ```bash
 git checkout -b feature/pruebas-de-integracion   # se aísla el trabajo
