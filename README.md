@@ -41,8 +41,7 @@ Estacion_2/
 ├── salidas/                       # Las genera el programa; se versionan como evidencia
 │   ├── errores_carga.log          # Registro de auditoría de la carga
 │   └── transacciones.json         # Las 38 transacciones válidas serializadas
-└── docs/
-    └── Informe técnico en PDF con normas APA
+└── Estacion2_Informe_Tecnico_APA_Deibis_Zuluaga.pdf   # Informe técnico, normas APA
 ```
 
 | Módulo | Responsabilidad única |
