@@ -41,6 +41,7 @@ Estacion_2/
 ├── salidas/                       # Las genera el programa; se versionan como evidencia
 │   ├── errores_carga.log          # Registro de auditoría de la carga
 │   └── transacciones.json         # Las 38 transacciones válidas serializadas
+├── capturas/                      # Evidencias de GitHub usadas en el informe
 └── Estacion2_Informe_Tecnico_APA_Deibis_Zuluaga.pdf   # Informe técnico, normas APA
 ```
 
