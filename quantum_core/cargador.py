@@ -63,7 +63,12 @@ def configurar_registro(archivo_log=ARCHIVO_LOG):
     registro.setLevel(logging.INFO)
 
     # Si la funcion se llamara dos veces, los destinos se duplicarian y cada
-    # mensaje saldria repetido. Limpiarlos primero evita ese efecto.
+    # mensaje saldria repetido. Limpiarlos primero evita ese efecto. Cada
+    # destino se cierra antes de descartarlo: si solo se vaciara la lista, el
+    # archivo de log anterior quedaria abierto sin que nadie lo libere.
+    for destino in list(registro.handlers):
+        destino.close()
+
     registro.handlers.clear()
 
     # La carpeta de salidas puede no existir en un clon recien descargado del
