@@ -1,0 +1,16 @@
+2026-09-17 16:10:52 | INFO    | Inicio de carga del archivo datos/transacciones_corruptas.txt
+2026-09-17 16:10:52 | WARNING | [Linea  3] ValueError: could not convert string to float: 'texto_invalido'  ->  registro descartado: C003,DEBITO,texto_invalido
+2026-09-17 16:10:52 | WARNING | [Linea  4] ValueError: el monto no puede ser negativo  ->  registro descartado: C004,CREDITO,-200000
+2026-09-17 16:10:52 | WARNING | [Linea  6] TypeError: cantidad de datos incorrecta  ->  registro descartado: C006,DEBITO
+2026-09-17 16:10:52 | WARNING | [Linea 13] ValueError: el monto no puede ser negativo  ->  registro descartado: C013,CRIPTO,-75000
+2026-09-17 16:10:52 | WARNING | [Linea 15] ValueError: could not convert string to float: 'abc123'  ->  registro descartado: C015,CREDITO,abc123
+2026-09-17 16:10:52 | WARNING | [Linea 19] ValueError: tipo de transaccion desconocido: TRANSFERENCIA  ->  registro descartado: C019,TRANSFERENCIA,540000
+2026-09-17 16:10:52 | WARNING | [Linea 22] ValueError: could not convert string to float: ''  ->  registro descartado: C022,EFECTIVO,
+2026-09-17 16:10:52 | WARNING | [Linea 28] TypeError: cantidad de datos incorrecta  ->  registro descartado: C027,CRIPTO
+2026-09-17 16:10:52 | WARNING | [Linea 33] ValueError: el monto no puede ser negativo  ->  registro descartado: C032,DEBITO,-1
+2026-09-17 16:10:52 | WARNING | [Linea 36] TypeError: cantidad de datos incorrecta  ->  registro descartado: C035,CRIPTO,1540000,EXTRA
+2026-09-17 16:10:52 | WARNING | [Linea 43] ValueError: tipo de transaccion desconocido: CHEQUE  ->  registro descartado: C042,CHEQUE,210000
+2026-09-17 16:10:52 | WARNING | [Linea 48] TypeError: cantidad de datos incorrecta  ->  registro descartado: C047
+2026-09-17 16:10:52 | INFO    | Fin de carga de datos/transacciones_corruptas.txt: 38 validas, 12 descartadas (8 ValueError, 4 TypeError)
+2026-09-17 16:10:52 | INFO    | Serializacion completada: 38 registros escritos en salidas/transacciones.json
+2026-09-17 16:10:52 | INFO    | Deserializacion de salidas/transacciones.json: 38 objetos reconstruidos, 0 descartados

@@ -1,0 +1,230 @@
+[
+    {
+        "cliente_id": "C001",
+        "tipo": "DEBITO",
+        "monto": 150000.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C002",
+        "tipo": "CREDITO",
+        "monto": 500000.0,
+        "impacto": 10000.0
+    },
+    {
+        "cliente_id": "C005",
+        "tipo": "DEBITO",
+        "monto": 45000.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C007",
+        "tipo": "CREDITO",
+        "monto": 10000.0,
+        "impacto": 200.0
+    },
+    {
+        "cliente_id": "C008",
+        "tipo": "EFECTIVO",
+        "monto": 320000.0,
+        "impacto": 3200.0
+    },
+    {
+        "cliente_id": "C009",
+        "tipo": "CRIPTO",
+        "monto": 1850000.0,
+        "impacto": 55500.0
+    },
+    {
+        "cliente_id": "C010",
+        "tipo": "DEBITO",
+        "monto": 78500.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C011",
+        "tipo": "CREDITO",
+        "monto": 1250000.0,
+        "impacto": 25000.0
+    },
+    {
+        "cliente_id": "C012",
+        "tipo": "EFECTIVO",
+        "monto": 95000.0,
+        "impacto": 950.0
+    },
+    {
+        "cliente_id": "C014",
+        "tipo": "DEBITO",
+        "monto": 230000.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C016",
+        "tipo": "EFECTIVO",
+        "monto": 41000.0,
+        "impacto": 410.0
+    },
+    {
+        "cliente_id": "C017",
+        "tipo": "CRIPTO",
+        "monto": 660000.0,
+        "impacto": 19800.0
+    },
+    {
+        "cliente_id": "C018",
+        "tipo": "DEBITO",
+        "monto": 187300.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C020",
+        "tipo": "CREDITO",
+        "monto": 88000.0,
+        "impacto": 1760.0
+    },
+    {
+        "cliente_id": "C021",
+        "tipo": "DEBITO",
+        "monto": 12500.75,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C023",
+        "tipo": "CRIPTO",
+        "monto": 2100000.0,
+        "impacto": 63000.0
+    },
+    {
+        "cliente_id": "C024",
+        "tipo": "DEBITO",
+        "monto": 64000.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C025",
+        "tipo": "CREDITO",
+        "monto": 375000.0,
+        "impacto": 7500.0
+    },
+    {
+        "cliente_id": "C026",
+        "tipo": "EFECTIVO",
+        "monto": 19800.0,
+        "impacto": 198.0
+    },
+    {
+        "cliente_id": "C028",
+        "tipo": "DEBITO",
+        "monto": 143200.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C029",
+        "tipo": "CREDITO",
+        "monto": 920000.0,
+        "impacto": 18400.0
+    },
+    {
+        "cliente_id": "C030",
+        "tipo": "EFECTIVO",
+        "monto": 57000.0,
+        "impacto": 570.0
+    },
+    {
+        "cliente_id": "C031",
+        "tipo": "CRIPTO",
+        "monto": 480000.0,
+        "impacto": 14400.0
+    },
+    {
+        "cliente_id": "C033",
+        "tipo": "CREDITO",
+        "monto": 265000.0,
+        "impacto": 5300.0
+    },
+    {
+        "cliente_id": "C034",
+        "tipo": "EFECTIVO",
+        "monto": 73400.0,
+        "impacto": 734.0
+    },
+    {
+        "cliente_id": "C036",
+        "tipo": "DEBITO",
+        "monto": 99000.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C037",
+        "tipo": "CREDITO",
+        "monto": 1780000.0,
+        "impacto": 35600.0
+    },
+    {
+        "cliente_id": "C038",
+        "tipo": "EFECTIVO",
+        "monto": 28600.0,
+        "impacto": 286.0
+    },
+    {
+        "cliente_id": "C039",
+        "tipo": "CRIPTO",
+        "monto": 705000.0,
+        "impacto": 21150.0
+    },
+    {
+        "cliente_id": "C040",
+        "tipo": "DEBITO",
+        "monto": 0.0,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C041",
+        "tipo": "CREDITO",
+        "monto": 455000.0,
+        "impacto": 9100.0
+    },
+    {
+        "cliente_id": "C043",
+        "tipo": "EFECTIVO",
+        "monto": 132000.0,
+        "impacto": 1320.0
+    },
+    {
+        "cliente_id": "C044",
+        "tipo": "CRIPTO",
+        "monto": 3200000.0,
+        "impacto": 96000.0
+    },
+    {
+        "cliente_id": "C045",
+        "tipo": "DEBITO",
+        "monto": 56750.5,
+        "impacto": 1500.0
+    },
+    {
+        "cliente_id": "C046",
+        "tipo": "CREDITO",
+        "monto": 680000.0,
+        "impacto": 13600.0
+    },
+    {
+        "cliente_id": "C048",
+        "tipo": "EFECTIVO",
+        "monto": 84000.0,
+        "impacto": 840.0
+    },
+    {
+        "cliente_id": "C049",
+        "tipo": "CRIPTO",
+        "monto": 1120000.0,
+        "impacto": 33600.0
+    },
+    {
+        "cliente_id": "C050",
+        "tipo": "DEBITO",
+        "monto": 202500.0,
+        "impacto": 1500.0
+    }
+]

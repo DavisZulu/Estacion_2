@@ -5,5 +5,6 @@ __pycache__/
 # Archivos del sistema operativo
 .DS_Store
 
-# Salidas que genera el programa al ejecutarse
-salidas/
+# La carpeta salidas/ NO se ignora: el archivo JSON y el registro de auditoria
+# que genera el programa se versionan como evidencia de la entrega. El programa
+# los regenera en cada ejecucion.
